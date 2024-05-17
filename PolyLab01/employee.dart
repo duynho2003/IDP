@@ -44,15 +44,15 @@ class Employee {
   void inputInfo() {
     String id = "";
     do {
-      print("Employee ID: ");
+      print("Enter Employee ID: ");
       id = stdin.readLineSync() ?? "";
       if (id != "") this.id = id;
     } while (id == "");
 
-    print("Enter employee name: ");
+    print("Enter Employee name: ");
     this.name = stdin.readLineSync() ?? "";
 
-    print("Enter employee address: ");
+    print("Enter Employee address: ");
     this.address = stdin.readLineSync() ?? "";
   }
 
@@ -62,5 +62,14 @@ class Employee {
     print("Name: $name");
     print("Address: $address");
     print("--------------");
+  }
+
+  double calculateSalary() {
+    return 0;
+  }
+
+  @override
+  String toString() {
+    return "id: $id - name: $name - address: $address";
   }
 }
