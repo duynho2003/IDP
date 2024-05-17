@@ -61,6 +61,6 @@ class Employee {
     print("Id: $id");
     print("Name: $name");
     print("Address: $address");
-    print("---------------");
+    print("--------------");
   }
 }
