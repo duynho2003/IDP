@@ -17,7 +17,7 @@ class EmployeeFulltime extends Employee {
   double get basicSalary => _basicsalary;
   set basicSalary(double value) {
     if (value < 0) {
-      throw Exception("salary must be positive");
+      throw Exception("Salary must be positive");
     }
     this._basicsalary = value;
   }
@@ -33,7 +33,7 @@ class EmployeeFulltime extends Employee {
   int get typeOfPosition => _typeOfPosition;
   set typeOfPosition(int value) {
     if (value < 1 || value > 3) {
-      throw Exception("must be 1 or 2, or 3");
+      throw Exception("Must be 1 or 2, or 3");
     }
     this._typeOfPosition = value;
   }
