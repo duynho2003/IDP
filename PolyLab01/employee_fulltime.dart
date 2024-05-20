@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'employee.dart';
 
-class EmployeeFulltime extends Employee {
+class EmployeeFullTime extends Employee {
   late double _basicsalary;
   late int _overtime;
   late int _typeOfPosition; // 1: Employee, 2: Director, 3: Head of Department
@@ -38,8 +38,8 @@ class EmployeeFulltime extends Employee {
     this._typeOfPosition = value;
   }
 
-  EmployeeFulltime() {}
-  EmployeeFulltime.withAll(String id, String name, String address,
+  EmployeeFullTime() {}
+  EmployeeFullTime.withAll(String id, String name, String address,
       double basicsalary, int overtime, int typeOfPosition) {
     this.id = id;
     this.name = name;

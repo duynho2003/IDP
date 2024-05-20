@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'Employee.dart';
+import 'employee.dart';
 
 class EmployeePartTime extends Employee {
   late int _workHour;
