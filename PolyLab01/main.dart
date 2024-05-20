@@ -11,7 +11,7 @@ void main() {
   // Employee emp = Employee.withAll(id: "469");
   EmployeeManage employeeManage = EmployeeManage(5);
   while (true) {
-    print("Welcome");
+    print("Welcome Dart Programming");
     print(("1. Add Employee"));
     print(("2. Show employee list"));
     print(("3. Show parttime list"));

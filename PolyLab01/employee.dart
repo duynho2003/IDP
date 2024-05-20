@@ -35,6 +35,12 @@ class Employee {
     this._address = address;
   }
 
+  Employee.withInfo({String? id, String? name, String? address}) {
+    this._id = id ?? "";
+    this._name = name ?? "";
+    this._address = address ?? "";
+  }
+
   Employee.autoId(String name, String address) {
     this._id = Random().nextInt(100000).toString();
     this._name = name;
