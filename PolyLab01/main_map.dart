@@ -1,14 +1,17 @@
 import 'dart:io';
 
 import 'employee.dart';
-import 'employee_manage.dart';
+import 'employee_manage_map.dart';
 
 void main() {
   // Employee employee = Employee.withInfo(id: "1");
   // Employee employeeA = Employee.withInfo(id: "AAA");
   // Employee employeeB = Employee.withInfo(id: "460");
   // Employee emp = Employee.withAll(id: "469");
-  EmployeeManage employeeManage = EmployeeManage(5);
+  //  List
+  // EmployeeManage employeeManage = EmployeeManage(5);
+  //  HashMap
+  EmployeeManageMap employeeManager = EmployeeManageMap(5);
   while (true) {
     print("Welcome Dart Programming");
     print(("1. Add Employee"));
@@ -25,19 +28,19 @@ void main() {
     }
     switch (choice) {
       case 1:
-        employeeManage.addEmployee();
+        employeeManager.addEmployee();
       case 2:
-        employeeManage.showEmployees();
+        employeeManager.showEmployees();
       case 3:
-        employeeManage.showParttimeEmployee();
+        employeeManager.showEmployeePartTime();
       case 4:
-        employeeManage.showFulltimeEmployee();
+        employeeManager.showFullTimeEmployee();
       case 5:
-        employeeManage.showEmployeeHighestSalary();
+        employeeManager.showEmployeeHighestSalary();
       case 6:
         print("Enter employee id:");
         String id = stdin.readLineSync() ?? "";
-        Employee? employee = employeeManage.findEmployeeById(id);
+        Employee? employee = employeeManager.findEmployeeById(id);
         employee != null ? employee.printInfo() : print("Not found!");
       case 7:
         print("Exit");

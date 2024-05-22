@@ -31,7 +31,7 @@ class EmployeeManage {
       } else if (empType == "D") {
         break;
       } else {
-        print("incorrect choice");
+        print("Incorrect choice");
       }
     } while (listEmployees.length < _maxEmployee);
   }

@@ -65,12 +65,29 @@ class EmployeeManageMap {
         employeeHighest = employee;
       }
     }
-
     if (employeeHighest != null) {
       print("Highest salary: $highestSalary");
       employeeHighest.printInfo();
     } else {
       print("Not employee");
+    }
+  }
+
+  //show employeee have highest salary.
+  void showEmployeeHighestSalary() {
+    double highestSalary = 0;
+    Employee? employeeHighestSalary = null;
+    for (var employee in mapEmployee.values) {
+      if (employee.calculateSalary() > highestSalary) {
+        highestSalary = employee.calculateSalary();
+        employeeHighestSalary = employee;
+      }
+    }
+    if (employeeHighestSalary != null) {
+      print("Highest salary: $highestSalary");
+      employeeHighestSalary.printInfo();
+    } else {
+      print("Not employee!");
     }
   }
 
