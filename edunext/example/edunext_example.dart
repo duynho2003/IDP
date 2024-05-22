@@ -2,10 +2,11 @@ import 'package:edunext/edunext.dart';
 import 'dart:convert' as convert;
 
 import 'package:http/http.dart' as http;
+
 Future<void> main() async {
   var awesome = Awesome();
   print('awesome: ${awesome.isAwesome}');
-   var url =
+  var url =
       Uri.https('www.googleapis.com', '/books/v1/volumes', {'q': '{http}'});
 
   // Await the http get response, then decode the json-formatted response.
