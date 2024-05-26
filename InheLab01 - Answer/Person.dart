@@ -6,9 +6,10 @@ class Person {
   DateTime birthDate = DateTime.now();
   String address = '';
 
-  //constructor
+  //constructor ko tham so
   Person();
   
+  //constructor day du tham so
   Person.full(this.name, this.gender, this.birthDate, this.address);
 
   String getName() => name;
