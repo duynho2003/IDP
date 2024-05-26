@@ -12,6 +12,7 @@ class Person {
   //constructor day du tham so
   Person.full(this.name, this.gender, this.birthDate, this.address);
 
+  //getters va setters
   String getName() => name;
   void setName(String name) => this.name = name;
 
